@@ -1,6 +1,7 @@
 {
   "scripts": {
-    "tw": "npx @tailwindcss/cli -i ./src/style.css -o ./src/tailwind.css --watch"
+    "dev": "npx @tailwindcss/cli -i ./src/style.css -o ./src/tailwind.css --watch",
+    "build": "npx tailwindcss -i ./src/style.css -o ./dist/style.css --minify"
   },
 
   "dependencies": {
