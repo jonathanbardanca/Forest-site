@@ -4,8 +4,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./tailwind.css">
-  <link rel="icon" href="../img/favicon.png" type="image/png">
+  <link rel="stylesheet" href="./css/tailwind.css">
+  <link rel="icon" href="./img/favicon.png" type="image/png">
   <title>forest</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -26,7 +26,7 @@
 
   <header class="container flex items-center justify-between gap-8 py-8">
     <a href="./">
-      <img src="../img/forest.svg" alt="Forest" />
+      <img src="./img/forest.svg" alt="Forest" />
     </a>
     <nav id="mobile-menu" class="lg:block hidden items-center z-40 max-lg:fixed max-lg:w-full max-lg:inset-0">
       <div class="fixed lg:hidden inset-0 bg-verde-950/40 backdrop-blur-md"></div>
@@ -59,11 +59,11 @@
   <main class="container">
     <div class="relative px-8 pb-8 pt-64 bg-gradient-to-t from-verde-950/80 text-white rounded-2xl overflow-hidden max-sm:px-4 max-sm:pt-12">
 
-      <video id="video" class="absolute inset-0 size-full object-cover -z-10 animate-fadeIn" muted autoplay playsinline loop width="1280" height="720" src="../img/video_chuva.mp4"></video>
+      <video id="video" class="absolute inset-0 size-full object-cover -z-10 animate-fadeIn" muted autoplay playsinline loop width="1280" height="720" src="./img/video_chuva.mp4"></video>
 
       <div class="bg-verde-950/60 rounded-xl flex flex-col items-start gap-2 p-4 mb-8 sm:gap-8 sm:items-center sm:py-1 sm:pl-4 sm:pr-1 sm:bg-verde-950 sm:inline-flex sm:flex-row sm:rounded-full">
         <p class="text-white">vagas para dezembro abertas</p>
-        <a class="btn inline-flex items-center gap-2" href="#contato">Reserve Hoje<img src="../img/seta.svg" alt="" /></a>
+        <a class="btn inline-flex items-center gap-2" href="#contato">Reserve Hoje<img src="./img/seta.svg" alt="" /></a>
       </div>
 
       <h1 class="mb-8 font-serif text-balance max-w-screen-sm text-4xl sm:mb-20 sm:text-5xl">Venha Experimentar a Vida na Floresta</h1>
@@ -74,7 +74,7 @@
         <div class="">
           <p class="uppercase mb-2">Recomendado por</p>
           <p class="flex items-center gap-4">
-            <img class="w-28" src="../img/parceiros/wildbeast.svg" alt="Wildbeast" />
+            <img class="w-28" src="./img/parceiros/wildbeast.svg" alt="Wildbeast" />
             <span>|</span>
             Revista Nacional
           </p>
@@ -87,7 +87,7 @@
   <!-- acomodacoes -->
   <section class="radial-gradient container grid lg:grid-cols-[2fr_3fr] gap-8 pt-16 mb-12 sm:mb-16" id="acomodacoes">
 
-    <div class="content-end bg-[url('../img/padrao.svg')] bg-no-repeat bg-contain bg-left-bottom">
+    <div class="content-end bg-[url('./img/padrao.svg')] bg-no-repeat bg-contain bg-left-bottom">
       <h2 class="text-white mb-8 font-serif text-4xl lg:text-5xl">Refúgio Natural</h2>
       <ul class="text-gray-200 grid gap-4 *:flex *:items-center *:gap-4 sm:text-xl">
         <li class=""><span class="h-0.5 w-6 neon inline-block"></span>Experimente a natureza de perto</li>
@@ -99,16 +99,16 @@
     </div>
 
     <div class="grid grid-cols-[2fr_1fr] gap-4 sm:gap-8">
-      <div class="col-span-full grid *:col-start-1 *:row-start-1"><img class="h-52 w-full object-cover rounded-xl" src="../img/casa1.jpg" alt="casa1">
+      <div class="col-span-full grid *:col-start-1 *:row-start-1"><img class="h-52 w-full object-cover rounded-xl" src="./img/casa1.jpg" alt="casa1">
         <span class="m-2 self-start justify-self-end uppercase text-white rounded-full bg-verde-950/60 px-4 py-2 text-sm/none">Ruby</span>
       </div>
 
-      <div class="grid *:col-start-1 *:row-start-1"><img class="size-full rounded-xl" src="../img/casa2.jpg" alt="casa2">
+      <div class="grid *:col-start-1 *:row-start-1"><img class="size-full rounded-xl" src="./img/casa2.jpg" alt="casa2">
         <span class="m-2 self-start justify-self-end uppercase text-white rounded-full bg-verde-950/60 px-4 py-2 text-sm/none">Emerald</span>
       </div>
 
       <div class="grid *:col-start-1 *:row-start-1">
-        <img class="size-full object-cover rounded-xl" src="../img/casa3.jpg" alt="Casa 3" />
+        <img class="size-full object-cover rounded-xl" src="./img/casa3.jpg" alt="Casa 3" />
         <span class="m-2 self-start justify-self-end uppercase text-white rounded-full bg-verde-950/60 px-4 py-2 text-sm/none">Saphire</span>
       </div>
 
@@ -201,19 +201,19 @@
     </div>
     <div class="grid grid-cols-2 gap-4">
       <div class="group relative cursor-pointer overflow-hidden rounded-xl">
-        <img class="size-full object-cover transition-transform group-hover:scale-110" src="../img/canoagem.jpg" alt="canoagem" />
+        <img class="size-full object-cover transition-transform group-hover:scale-110" src="./img/canoagem.jpg" alt="canoagem" />
         <div class="absolute flex items-end p-4 inset-0 bg-gradient-to-t from-verde-950/80 opacity-0 transition-opacity group-hover:opacity-100">
           <span class="text-white">Canoagem</span>
         </div>
       </div>
       <div class="group row-span-2 relative cursor-pointer overflow-hidden rounded-xl">
-        <img class="size-full object-cover transition-transform group-hover:scale-110" src="../img/observacao-noturna.jpg" alt="Observação Noturna" />
+        <img class="size-full object-cover transition-transform group-hover:scale-110" src="./img/observacao-noturna.jpg" alt="Observação Noturna" />
         <div class="absolute flex items-end p-4 inset-0 bg-gradient-to-t from-verde-950/80 opacity-0 transition-opacity group-hover:opacity-100">
           <span class="text-white">Observação Noturna</span>
         </div>
       </div>
       <div class="group relative cursor-pointer overflow-hidden rounded-xl">
-        <img class="size-full object-cover transition-transform group-hover:scale-110" src="../img/vida-selvagem.jpg" alt="Vida Selvagem" />
+        <img class="size-full object-cover transition-transform group-hover:scale-110" src="./img/vida-selvagem.jpg" alt="Vida Selvagem" />
         <div class="absolute flex items-end p-4 inset-0 bg-gradient-to-t from-verde-950/80 opacity-0 transition-opacity group-hover:opacity-100">
           <span class="text-white">Vida Selvagem</span>
         </div>
@@ -222,7 +222,7 @@
   </section>
 
   <!-- ciclo natural -->
-  <section class="container bg-[url('../img/padrao.svg')] bg-contain bg-center bg-no-repeat mb-12 sm:mb-16 py-12 sm:py-16 bg-verde-800">
+  <section class="container bg-[url('./img/padrao.svg')] bg-contain bg-center bg-no-repeat mb-12 sm:mb-16 py-12 sm:py-16 bg-verde-800">
     <p class="mb-4 text-center text-verde-200 uppercase tracking-widest text-sm">
       Ciclo Natural
     </p>
@@ -234,7 +234,7 @@
 
       <div class="grid flex-1 gap-4 bg-verde-900 p-6 sm:p-8 rounded-xl transition-transform sm:hover:-translate-y-2">
         <div class="neon size-10 flex items-center justify-center">
-          <img src="../img/manha.svg" alt="" />
+          <img src="./img/manha.svg" alt="" />
         </div>
         <h3 class="text-white text-2xl font-serif">Amanhecer</h3>
         <p class="text-gray-400">
@@ -245,7 +245,7 @@
 
       <div class="grid flex-1 gap-4 bg-verde-900 p-6 sm:p-8 rounded-xl transition-transform sm:translate-y-12 sm:hover:translate-y-10">
         <div class="neon size-10 flex items-center justify-center">
-          <img src="../img/dia.svg" alt="" />
+          <img src="./img/dia.svg" alt="" />
         </div>
         <h3 class="text-white text-2xl font-serif">Meio-dia</h3>
         <p class="text-gray-400">
@@ -256,7 +256,7 @@
 
       <div class="grid flex-1 gap-4 bg-verde-900 p-6 sm:p-8 rounded-xl transition-transform sm:hover:-translate-y-2">
         <div class="neon size-10 flex items-center justify-center">
-          <img src="../img/noite.svg" alt="" />
+          <img src="./img/noite.svg" alt="" />
         </div>
         <h3 class="text-white text-2xl font-serif">Anoitecer</h3>
         <p class="text-gray-400">
@@ -328,11 +328,11 @@
   <!-- parceiros -->
   <section class="container mb-12 sm:mb-16">
     <ul class="flex flex-col items-center justify-center content-center py-4 max-sm:divide-y-2 max-sm:divide-verde-900 *:p-4 sm:flex-row sm:gap-8 sm:border-b-2 sm:border-t-2 sm:border-verde-900 sm:py-8 *:*:max-h-8">
-      <li><img src="../img/parceiros/caravan.svg" alt="caravan"></li>
-      <li><img src="../img/parceiros/dogs.svg" alt="dogs"></li>
-      <li><img src="../img/parceiros/wildbeast.svg" alt="wildbeast"></li>
-      <li><img src="../img/parceiros/lescone.svg" alt="lescone"></li>
-      <li><img src="../img/parceiros/surfbot.svg" alt="surfbot"></li>
+      <li><img src="./img/parceiros/caravan.svg" alt="caravan"></li>
+      <li><img src="./img/parceiros/dogs.svg" alt="dogs"></li>
+      <li><img src="./img/parceiros/wildbeast.svg" alt="wildbeast"></li>
+      <li><img src="./img/parceiros/lescone.svg" alt="lescone"></li>
+      <li><img src="./img/parceiros/surfbot.svg" alt="surfbot"></li>
     </ul>
   </section>
 
@@ -353,7 +353,7 @@
         </div>
       </div>
       <div class="lg:justify-self-end">
-        <img class="mb-4" src="../img/forest.svg" alt="Forest" />
+        <img class="mb-4" src="./img/forest.svg" alt="Forest" />
         <p class="text-gray-400">Conecte-se com a natureza</p>
       </div>
     </div>
@@ -367,7 +367,7 @@
     </div>
   </footer>
 
-  <script src="../script.js"></script>
+  <script src="./script.js"></script>
 </body>
 
 </html>
