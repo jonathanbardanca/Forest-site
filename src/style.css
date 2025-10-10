@@ -12,6 +12,10 @@
   --font-sans: 'DM Sans', 'system-ui', 'sans-serif';
   --font-serif: 'DM Serif Text', 'Georgia', 'serif';
 
+   --animate-slideIn: slideIn .4s ease-in-out forwards;
+   --animate-fadeIn: fadeIn .4s ease-in-out forwards;
+
+
   @keyframes slideIn {
     0% {
       opacity: 0;
@@ -56,13 +60,13 @@
 @layer components {
   .neon {
     @apply rounded-full border border-verde-200 bg-linear-to-b from-verde-200 to-verde-400;
-    box-shadow: 0 1px 4px 1px rgba(var(--color-verde-200), 0.25),
+    box-shadow: 0 1px 4px 1px --theme(--color-verde-200 / 25%),
       inset 0px -1px 2px var(--color-verde-200);
   }
 
   .btn {
     @apply rounded-full border border-verde-200 bg-linear-to-b from-verde-200 to-verde-400 px-5 py-2 text-verde-900 transition hover:contrast-200;
-    box-shadow: 0 1px 4px 1px rgba(var(--color-verde-200), 0.25),
+    box-shadow: 0 1px 4px 1px --theme(--color-verde-200 / 25%),
       inset 0px -1px 2px var(--color-verde-200);
   }
 
